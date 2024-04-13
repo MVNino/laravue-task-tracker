@@ -17,6 +17,7 @@ const props = defineProps({
   }
 }) 
 
+// Emit event for transaction removal
 const emit = defineEmits(['transactionDeleted'])
 
 const onDelete = (id) => {

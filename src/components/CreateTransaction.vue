@@ -31,12 +31,13 @@ const onSubmit = () => {
         return
     }
 
-    // Insert now
+    // Wrap to transaction data
     const transactionData = {
         text: text.value,
         amount: parseFloat(amount.value)
     }
 
+    // Emit event for submitted transaction
     emit('transactionSubmitted', transactionData)
 
     // Clear form
