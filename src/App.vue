@@ -66,7 +66,7 @@ const handleTransactionSubmitted = (transactionData) => {
     name: transactionData.text,
     amount: transactionData.amount,
   })
-  
+
   saveTransactionsToLocalStorage()
 
   toast.success('Transaction added!')
